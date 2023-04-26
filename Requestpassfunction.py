@@ -21,7 +21,7 @@ json_object = json.loads(jsonArray)                  # Loading Json object
 print(f'json_array{jsonArray}')                      # loging json object for references
 # Calling function with filename.python
 #Then calling Post Api of cloud function 
-#Passing request conversion CSV file JSON data to cloud function end point
+#Passing request converted json data into cloud function end point 
 def send_message_to_google_cloud():
     url = "https://us-central1-project-pubsub-382822.cloudfunctions.net/my_cloud_function"
     data =json_object
